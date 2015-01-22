@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mechons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Rut</th>
+      <th>Mail</th>
+      <th>Telefono</th>
+      <th>Psu mat</th>
+      <th>Psu leng</th>
+      <th>Psu cien</th>
+      <th>Psu hist</th>
+      <th>Ranking</th>
+      <th>Nem</th>
+      <th>Carrera</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mechons.each do |mechon| %>
+      <tr>
+        <td><%= mechon.Nombre %></td>
+        <td><%= mechon.Apellido %></td>
+        <td><%= mechon.Rut %></td>
+        <td><%= mechon.Mail %></td>
+        <td><%= mechon.Telefono %></td>
+        <td><%= mechon.Psu_mat %></td>
+        <td><%= mechon.Psu_leng %></td>
+        <td><%= mechon.Psu_cien %></td>
+        <td><%= mechon.Psu_hist %></td>
+        <td><%= mechon.Ranking %></td>
+        <td><%= mechon.Nem %></td>
+        <td><%= mechon.Carrera_id %></td>
+        <td><%= link_to 'Show', mechon %></td>
+        <td><%= link_to 'Edit', edit_mechon_path(mechon) %></td>
+        <td><%= link_to 'Destroy', mechon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mechon', new_mechon_path %>

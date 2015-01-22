@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Nombre: MyString
+  Apellido: MyString
+  Rut: 1
+  Mail: MyString
+  Telefono: 1
+  Psu_mat: 1
+  Psu_leng: 1
+  Psu_cien: 1
+  Psu_hist: 1
+  Ranking: 1
+  Nem: 1
+  Carrera_id: 1
+
+two:
+  Nombre: MyString
+  Apellido: MyString
+  Rut: 1
+  Mail: MyString
+  Telefono: 1
+  Psu_mat: 1
+  Psu_leng: 1
+  Psu_cien: 1
+  Psu_hist: 1
+  Ranking: 1
+  Nem: 1
+  Carrera_id: 1

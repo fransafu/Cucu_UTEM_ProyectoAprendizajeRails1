@@ -1,0 +1,2 @@
+module MechonsHelper
+end

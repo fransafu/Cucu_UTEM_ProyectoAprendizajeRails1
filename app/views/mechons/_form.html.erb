@@ -1,0 +1,65 @@
+<%= form_for(@mechon) do |f| %>
+  <% if @mechon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mechon.errors.count, "error") %> prohibited this mechon from being saved:</h2>
+
+      <ul>
+      <% @mechon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre %><br>
+    <%= f.text_field :Nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :Apellido %><br>
+    <%= f.text_field :Apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :Rut %><br>
+    <%= f.number_field :Rut %>
+  </div>
+  <div class="field">
+    <%= f.label :Mail %><br>
+    <%= f.text_field :Mail %>
+  </div>
+  <div class="field">
+    <%= f.label :Telefono %><br>
+    <%= f.number_field :Telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :Psu_mat %><br>
+    <%= f.number_field :Psu_mat %>
+  </div>
+  <div class="field">
+    <%= f.label :Psu_leng %><br>
+    <%= f.number_field :Psu_leng %>
+  </div>
+  <div class="field">
+    <%= f.label :Psu_cien %><br>
+    <%= f.number_field :Psu_cien %>
+  </div>
+  <div class="field">
+    <%= f.label :Psu_hist %><br>
+    <%= f.number_field :Psu_hist %>
+  </div>
+  <div class="field">
+    <%= f.label :Ranking %><br>
+    <%= f.number_field :Ranking %>
+  </div>
+  <div class="field">
+    <%= f.label :Nem %><br>
+    <%= f.number_field :Nem %>
+  </div>
+  <div class="field">
+    <%= f.label :Carrera_id %><br>
+    <%= f.number_field :Carrera_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

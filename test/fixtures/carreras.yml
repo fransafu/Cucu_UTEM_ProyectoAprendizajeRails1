@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Cod_carrera: 1
+  Nombre_carrera: MyString
+  Jefe_carrera: MyString
+  Facultad_id: 1
+
+two:
+  Cod_carrera: 1
+  Nombre_carrera: MyString
+  Jefe_carrera: MyString
+  Facultad_id: 1
